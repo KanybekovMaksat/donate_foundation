@@ -1,0 +1,252 @@
+@media screen and (max-width:1270px) {
+    .a_slider__card-text{
+        max-width: 650px;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1390px){
+    .a_slider__controllers {
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 200px;
+        z-index: 99;
+    }
+}
+.a_custom-prev{
+    position: absolute;
+    left: -70px;
+}
+.a_custom-next{
+    position: absolute;
+    right: -70px;
+}
+
+/* intro styles start */
+.blog-intro-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+
+    display: inline;
+}
+
+.blog-intro {
+    max-height: 265px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../images/about-us-intro-bg.jpg);
+}
+
+.bintro__content {
+    padding: 70px 0px 103px 0px;
+}
+
+.bintro__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+    color: #2C2C2C;
+}
+
+.bintro__subtitle {
+    margin-top: 12px;
+
+    font-size: 18px;
+    line-height: 27px;
+    color: #111111;
+}
+
+
+.text-page {
+    margin: 40px 0;
+}
+
+.text-page p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #2C2C2C;
+
+    margin-bottom: 10px;
+}
+
+
+.aboutus {
+    margin-top: 30px;
+}
+.aboutus__video{
+    position: relative;
+    text-align: center;
+}
+.aboutus__video-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.aboutus__video-play img {
+    width: 120px;
+    height: 120px;
+}
+.aboutus__video-play{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.aboutus__video iframe {
+    display: block;
+    width: 748px;
+    height: 398px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+.thumbnail {
+    width: 748px;
+    height: 398px;
+}
+
+.bank-accounts {
+    border-radius: 20px;
+}
+
+.bank-accounts__content {
+    background-image: url(../../images/bank-accounts-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 20px;
+}
+
+.bank-accounts__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.bank-accounts__subtitle {
+    max-width: 1177px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-top: 25px;
+}
+
+.bank-accounts__btn {
+    padding: 10px 90px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 0px 14px rgba(0, 255, 114, 0.6));
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    margin: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .thumbnail {
+        width: 600px;
+        height: 306px;
+    }
+    .aboutus__video iframe{
+        margin: 0 auto;
+        width: 600px;
+        height: 306px;
+    }
+    .aboutus__video-play img {
+        width: 100px;
+        height: 100px;
+    }
+    .aboutus__video-play {
+        top: 34%;
+        left: 42%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .aboutus__video-play img {
+        width: 75px;
+        height: 75px;
+    }
+    .aboutus__video-play {
+        top: 34%;
+        left: 43%;
+    }
+    .thumbnail {
+        width: 90%;
+        height: 90%;
+    }
+    .aboutus__video iframe{
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+
+
+    .bank-accounts__title {
+        font-size: 35px;
+    } 
+    .bank-accounts__subtitle {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .bank-accounts__btn {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutus__video-play img {
+        width: 60px;
+        height: 60px;
+    }
+    .aboutus__video-play {
+        top: 35%;
+        left: 42%;
+    }
+
+    .blog-intro-container {
+        display: block;
+    }
+    .blog-intro {
+        background-image: url(../../images/about-us-intro-480.jpg);
+    }
+
+
+
+    .bank-accounts__title {
+        font-size: 30px;
+    } 
+    .bank-accounts__subtitle {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .bank-accounts__btn {
+        margin: 15px 0;
+    }
+}

@@ -1,0 +1,131 @@
+
+.message{
+    margin-top: 41px;
+}
+.message__content{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.message__title{
+    font-family: 'Poppins';     
+    font-weight: 500;
+    font-size: 40px;
+    color:var(--primary-color);    
+}
+.message__left-text{
+    max-width: 525px;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    color:  rgba(68, 68, 65, 1);
+}
+
+.message__left-contacts {
+    margin: 20px 0 40px 0;
+}
+
+
+.message__left-contact {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.message__left-contacts-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--primary-color);
+
+    margin-left: 10px;
+}
+
+.message__left-social {
+    display: flex;
+}
+
+.message__left-social-item {
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.message__left-social-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.message__send{
+    max-width: 625px;
+    padding: 50px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(51, 51, 51, 0.1);
+    border-radius: 20px;
+}
+.message__send-form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr 1.6fr 1fr;
+}
+.message__send-input,.message__send-btn,.message__send-text {
+    margin: 5px 0px;
+    padding: 18px;
+    width: 100%;
+    max-height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #7A7A7A;
+    border-color: #7A7A7A;
+    border-radius: 7px;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #151515;
+}
+.message__send-text {
+    max-height: 100px;
+}
+.message__send-btn{
+    color: white;
+    background: var(--primary-color);
+}
+
+@media screen and (max-width:1024px) {
+    .message__content,.message__left{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .message__send {
+        width: 100%;
+        margin-top: 30px;
+    }
+}   
+
+@media screen and (max-width:480px) {
+    .message{
+        margin-top: 30px;
+    }
+    .message__send{
+        max-width: 275px;
+        padding:20px;
+    }
+    .message__send-input,.message__send-btn,.message__send-text {
+        margin: 5px 0px;
+        padding: 18px;
+        max-width: 235px;
+    }
+    
+    .message__left-contacts{
+        display: flex;
+        flex-direction: column;
+    }
+    .message__left-text,.message__title {
+        text-align: start;
+    }
+}
+
+
+
+
+
